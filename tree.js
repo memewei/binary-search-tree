@@ -151,7 +151,7 @@ class Tree {
     if (data.data > node.data) return this.depth(data, node.right) + 1;
   }
 
-  checkBalanced() {
+  checkBalance() {
     const allNodes = this.inorder();
     for (let i = 0; i < allNodes.length; i++) {
       const node = this.find(allNodes[i]);
